@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box1{
+    background-color: red;
+    margin: 40px 40px;
+    padding: 20px;
+}
+#box2 {
+    background-color: rgb(123, 158, 48);
+    margin: 20px 20px;
+    padding: 20px;
+}
+#box3 {
+    background-color: red;
+    margin: 30px 20px;
+    padding: 20px;
+
+}
+
+footer{
+    background-color: blue;
+    padding: 20px;
+    margin: 10px;
+}

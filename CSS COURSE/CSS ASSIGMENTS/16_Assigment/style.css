@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.media-player{
+    background-color: black;
+    width: 80%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-button{
+flex: 1;
+margin: 10px;
+}
+
+.control-button-play{
+    flex: 3;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    border: none;
+  margin: 10px auto;
+    
+}

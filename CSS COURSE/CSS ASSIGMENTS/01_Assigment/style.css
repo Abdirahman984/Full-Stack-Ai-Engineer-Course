@@ -1,0 +1,24 @@
+ul li{
+list-style-type: none;
+background-color: black;
+color: white;
+}
+
+.lo-1{
+    color: red;
+}
+
+.lo-2 {
+    color: rgb(162, 255, 0);
+}
+.lo-3 {
+    color: rgb(33, 17, 149);
+}
+
+.lo-4 {
+    color: rgb(255, 115, 0);
+}
+
+.lo-5 {
+    color: rgb(159, 144, 149);
+}

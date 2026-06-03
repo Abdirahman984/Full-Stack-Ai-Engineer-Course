@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+blockquote p{
+    font-style: italic;
+}
+
+footer{
+    font-weight: bold;
+}

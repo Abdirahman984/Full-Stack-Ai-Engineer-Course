@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+}
+
+ul li{
+    list-style-type: none;
+}
+.interest-section{
+    text-transform: capitalize;
+    font-family: serif;
+}
+
+#books{
+    background-color: rgb(235, 135, 20);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border: none;
+    width: 100vw;
+    height: 150px;
+    margin: 20px;
+}
+
+#movies {
+    background-color: rgb(72, 224, 26);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border: none;
+    width: 100vw;
+    height: 150px;
+    margin: 20px;
+}
+
+#foods {
+    background-color: rgb(245, 91, 26);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border: none;
+    width: 100vw;
+    height: 150px;
+    margin: 20px;
+}

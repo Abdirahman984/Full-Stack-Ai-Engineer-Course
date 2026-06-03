@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#block1{
+    background-color: green;
+    padding: 20px;
+    margin: 10px;
+}
+
+#block2 {
+    background-color: rgb(27, 110, 194);
+    padding: 20px;
+    margin: 10px;
+}
+
+#block3{
+    background-color: rgb(243, 138, 26);
+    padding: 20px;
+    margin: 10px;
+}

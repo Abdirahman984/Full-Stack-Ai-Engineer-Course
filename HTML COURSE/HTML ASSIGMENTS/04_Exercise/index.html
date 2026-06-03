@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    form{
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        padding: 10px;
+        width: 600px;
+    }
+</style>
+
+<body>
+    <h2>Conference Registration Form</h2>
+    <form action="">
+        <label for="name">full name</label>
+        <input type="text" name="name" id="" required> <br>
+        <label for="email">email</label>
+        <input type="email" name="email" id="" required> <br>
+        <label for="contact">contact number</label>
+        <input type="number" name="contact"> <br>
+
+        <fieldset>
+            <legend>Preferred Day(s) of Attendance</legend>
+            <label for="day"> day 1</label>
+            <input type="checkbox"> <br>
+            <label for="day"> day 2</label>
+            <input type="checkbox"> <br>
+            <label for="day"> day 3</label>
+            <input type="checkbox"> <br> <br>
+
+            <label for="type">virtual</label>
+            <input type="radio" name="virt"> <br>
+            <label for="type">in-person</label>
+            <input type="radio" name="virt"> <br> <br>
+
+            <label for="">t-shirt size</label>
+            <select name="size" id="">
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select> <br> <br>
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>choose your intersr</legend>
+                        <label for="interest">software development</label>
+                        <input type="checkbox"> <br>
+                        <label for="interest">cyber security</label>
+                        <input type="checkbox"> <br>
+                        <label for="interest">eithical hacking</label>
+                        <input type="checkbox"> <br>
+                        <label for="interest">machine learning</label>
+                        <input type="checkbox"> <br>
+                        <label for="interest">data scientest</label>
+                        <input type="checkbox"> <br>
+                        <label for="interest">cloud computing</label>
+                        <input type="checkbox">
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <label for="">Vegetarian</label>
+            <input type="checkbox"> <br>
+
+            <label for="">Vegan</label>
+            <input type="checkbox"> <br>
+            <label for="">Gluten-Free</label>
+            <input type="checkbox"> <br>
+            <label for="">Nut-Free</label>
+            <input type="checkbox"> <br>
+            <label for="">Dairy-Free</label>
+            <input type="checkbox"> <br>
+            <label for="">No Restrictions.</label>
+            <input type="checkbox"> <br>
+        </fieldset>
+
+        <textarea name="textarea" id="" required></textarea> <br>
+        <label for="">via email</label>
+        <input type="checkbox"> <br>
+
+        <button>submit</button>
+
+
+    </form>
+</body>
+
+</html>

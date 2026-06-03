@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+#quote1{
+    background-color: red;
+    padding: 20px;
+    border: 1px solid rgb(224, 86, 86);
+    margin: 10px;
+}
+
+#quote2 {
+    background-color: rgb(242, 253, 87);
+    padding: 20px;
+    border: 1px solid rgb(224, 86, 86);
+    margin: 10px;
+}
+
+#quote3 {
+    background-color: rgb(69, 226, 38);
+    padding: 20px;
+    border: 1px solid rgb(224, 86, 86);
+    margin: 10px;
+}
+
+#quote4 {
+    background-color: rgb(40, 27, 219);
+    padding: 20px;
+    border: 1px solid rgb(224, 86, 86);
+    margin: 10px;
+}
+

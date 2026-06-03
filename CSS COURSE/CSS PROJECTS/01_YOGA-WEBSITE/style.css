@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anybody", sans-serif;
+    /* color: #dfdfd8; */
+    background-color: #bdbcb8;
+}
+
+header {
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: min(90%, 1120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 1.25rem;
+}
+
+.nav-links a:hover {
+    color: #5f6ad4;
+}
+
+.hunbegar {
+    display: none;
+}
+
+.hunbegar i {
+    font-size: 2rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* HERO SECTION CSS STYLE */
+.hero {
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(images/background-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.hero .container h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 2.1875rem;
+    background-color: #5f6ad4;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    transition: background-color 1s;
+}
+
+.btn:hover {
+    background-color: #fafaf6;
+    color: black;
+}
+
+/* YOGO SECTION */
+
+.yogo {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/yogo-sec.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+    margin-top: 6rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.yogo .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-inline: auto;
+    color: white;
+    margin-bottom: 7rem;
+    max-width: 728px;
+}
+
+.yogo .content h1 {
+    text-align: center;
+    color: white;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.yogo .content p {
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+/* INFO BOX SECTION */
+
+img {
+    width: 100%;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-block: 6rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.box img {
+    border-radius: 15px;
+}
+
+.box h1 {
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #2b2b2b;
+}
+
+.box p {
+    color: #646464;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.perfect-condition {
+    height: 438px;
+    background: linear-gradient(rgba(152, 151, 151, 0.5), rgba(111, 111, 111, 0.5)), url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpeg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.perfect-condition .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 1rem;
+}
+
+.perfect-condition .container h1 {
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 3.125rem;
+    color: #2a2a2a;
+}
+
+.perfect-condition .container p {
+    font-size: 1.25rem;
+    color: #2b2b2b;
+}
+
+.divne-yogo h1 {
+    padding: 5rem 0;
+    font-size: 3.125rem;
+    text-align: center;
+    color: #2b2b2b;
+
+}
+
+.divne-yogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divne-yogo img {
+    width: 1176px;
+    height: 620px;
+
+
+}
+
+/* BLOG SECTION */
+
+.blog h1{
+   margin: 5rem;
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 3.125rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 400px;
+    height: 593px;
+}
+
+.card h2{
+    font-size: 1.5625rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+.card p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #646464;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.yoga-sec{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url(images/image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-block: 5rem;
+    
+    
+}
+
+.card-sec{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 4rem;
+    border: 2px solid #5f6ad4;
+    background-color: #dfdfd8;
+    padding: 2.5rem;
+    margin: 0 auto;
+}
+
+.card-sec h1{
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+
+footer{
+    background-color: #2a2a2a;
+    color: white;
+    
+}
+
+.footer{
+    padding: 3rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    header {
+        height: 0;
+    }
+
+    .hunbegar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        right: 7%;
+        background-color: #5f6ad4;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #2b2b2b;
+        position: fixed;
+        inset: 0 0 0 0;
+        color: white;
+        transform: translateX(0%);
+        transition: all 365ms ease-in-out;
+
+
+    }
+
+    .mobile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+
+    .hunbegar i[data-visible="true"] {
+        display: block;
+    }
+
+    .hunbegar i[data-visible="false"] {
+        display: none;
+    }
+
+    .mobile-menu .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-menu .navigation .nav-links {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        gap: 2rem;
+
+
+
+    }
+
+    .mobile-menu .navigation .nav-links h1 {
+        font-size: 2.3125rem;
+        font-weight: 700;
+        border-bottom: 1px solid white;
+        padding: 5px;
+    }
+
+    .mobile-menu .navigation .nav-links a {
+        color: #fafaf6;
+    }
+
+    .hunbegar i {
+        z-index: 1;
+    }
+
+    .mobile-menu-action {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        display: inline-block;
+        width: 80%;
+        background-color: #5f6ad4;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 1.25rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .secondary-btn {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero,
+    .container h1 {
+        font-size: 3.0625rem;
+    }
+
+    .yogo h1 {
+        font-size: 2.125rem;
+        /* padding-top: 1rem; */
+    }
+
+    .yogo p {
+        font-size: 1.3125rem;
+        padding: 1rem;
+    }
+
+    .yogo .content {
+        margin-bottom: 2rem;
+        padding: 10px;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .perfect-condition .container h1 {
+        font-size: 2.0625rem;
+
+    }
+
+    .perfect-condition .container p {
+        font-size: 1rem;
+
+    }
+
+    .divne-yogo h1 {
+        font-size: 2.125rem;
+    }
+
+        .cards{
+            grid-template-columns: 1fr;
+        }
+
+                .card-sec{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .card-sec h2{
+                    font-size: 1.25rem;
+                }
+
+}
+
