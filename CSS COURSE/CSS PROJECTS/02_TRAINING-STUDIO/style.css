@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+
+}
+
+.nav-container {
+    width: 1110px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #FAFAFA;
+    color: #232d39;
+    box-shadow: 0 10px 20px (rgba(0, 0, 0, 0.9));
+}
+
+.logo h2 {
+    font-family: "poppins", sans-serif;
+    font-size: 2rem;
+    color: #232d39;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 11px 17px;
+    background-color: #ed563b;
+    color: #ffffff;
+    border: none;
+    font-size: 0.8125rem;
+
+}
+
+.logo h2 span {
+    color: #ed563b;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links .home {
+    color: #ed563b;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #232d39;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #ed563b;
+
+}
+
+.hunbegar {
+    display: none;
+}
+
+.hunbegar i {
+    font-size: 1.8rem;
+    color: #454554;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.title {
+    display: none;
+}
+
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+.container .vedio {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.container .vedio::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container .vedio video {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    color: white;
+    padding: 5rem;
+}
+
+.content h6 {
+    font-size: 1.125rem;
+}
+
+.content h2 {
+    margin: 30px 0 25px;
+    font-size: 5.25rem;
+}
+
+#btn {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    text-transform: capitalize;
+}
+
+.content h2 span {
+    color: #ed563b;
+}
+
+.hero-container {
+    max-width: 90%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    padding: 3rem;
+
+}
+
+.choose-program {
+    margin-top: 2;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.choose-program h2 {
+    color: #232d39;
+    font-size: 1.75rem;
+
+}
+
+.choose-program h2 span {
+    color: #ed563b;
+}
+
+.choose-program img {
+    width: 45px;
+    height: 15px;
+    margin: 0 20px;
+}
+
+.choose-program p {
+    color: #7a7a7a;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    text-transform: capitalize;
+}
+
+.card h4 {
+    font-size: 1.1875rem;
+    color: #232d39;
+    margin: 0px 0px 7px;
+}
+
+.card p {
+    font-size: 0.875rem;
+    margin: 0px 0px 7px;
+    color: #7a7a7a;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 0.8125;
+    color: #ed563b;
+}
+
+.gym-sec {
+    background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(7, 7, 7, 0.5)), url(images-&-vedios/gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+    margin-top: 5rem;
+}
+
+.containe-sec {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containe-sec h2 {
+    font-size: 2.25rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.containe-sec h2 span {
+    color: #ed563b;
+}
+
+.containe-sec p {
+    margin: 15px 0 25px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.training-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+}
+
+.training-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    /* background-color: aqua; */
+
+}
+
+.training-card {
+    width: 400px;
+    background-color: white;
+    color: #232d39;
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 5px 4px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.training-card h4 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+
+}
+
+.training-card h4:hover {
+    color: #ed563b;
+}
+
+.training-card h4:active {
+    color: #ed563b;
+}
+
+.training-card h4:visited {
+    color: #ed563b;
+}
+
+.training-card img {
+    width: 35px;
+    height: 35px;
+    margin: 0px 20px 0px 0px;
+}
+
+.training-cards #class-btn {
+    padding: 20px 45px;
+}
+
+#class-btn {
+    text-transform: capitalize;
+    padding: 20px 30px;
+    width: 400px;
+    height: 68px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+}
+
+.training-classes img {
+    width: 700px;
+    height: 297px;
+}
+
+.training-classes {
+    padding: 0 2rem;
+}
+
+.training-classes h2 {
+    margin: 15px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #232d39;
+
+}
+
+.training-classes p {
+    margin: 0px 0px 28px;
+}
+
+#view-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #ed563b;
+    text-transform: uppercase;
+
+}
+
+.time-table {
+    background: linear-gradient(rgba(23, 22, 22, 0.9), rgba(35, 35, 35, 0.9)), url(images-&-vedios/women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+    margin-top: 5rem;
+
+}
+
+.time-table .choose-program h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.time-table .choose-program p {
+    color: white;
+}
+
+.time-table .unoder-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.table table {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 20px;
+    width: 252px;
+    height: 100px;
+    font-size: 0.8125rem;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.expert-traing {
+    width: 100%;
+    min-height: 125vh;
+}
+
+.expert-traing .choose-program {
+    color: white;
+
+}
+
+.expert-traing .gym-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.expert-traing .gym-card {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.expert-traing .gym-card img {
+    width: 270px;
+    height: 205px;
+}
+
+.expert-traing .gym-cards .gym-card h5 {
+    color: #ed563b;
+    text-transform: capitalize;
+}
+
+.expert-traing .gym-cards .gym-card h4 {
+    font-size: 1.1875rem;
+    text-transform: capitalize;
+    /* margin: 0px 0px 18px; */
+}
+
+.expert-traing .gym-cards .gym-card p {
+    font-size: 0.875rem;
+    color: #7a7a7a;
+    text-transform: capitalize;
+    margin: 0px 0px 18px;
+}
+
+.expert-traing .gym-cards .gym-card .social-media-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.expert-traing .gym-cards .gym-card .social-media-icons i {
+    font-size: 1rem;
+    color: #232d39;
+}
+
+.container- {
+    display: flex;
+}
+
+
+
+.contact-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images-&-vedios/fitness.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 610px;
+    height: 600px;
+
+}
+
+.contact-form-container {
+    padding: 40px;
+    width: 450px;
+    height: 440px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 40px auto;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-form .form-row input {
+    padding: 10px;
+}
+
+.contact-form .contact-form-container input {
+    padding: 10px;
+}
+
+.contact-form .contact-form-container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    height: 280px;
+    resize: vertical;
+}
+
+
+.btn-send {
+    background-color: #ed563b;
+    color: #fff;
+    font-size: 1rem;
+    padding: 18px;
+    width: 170px;
+    border: none;
+    border-radius: 2px;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #232d39;
+    width: 1110px;
+    height: 25px;
+    text-align: center;
+    padding: 40px;
+}
+
+/* RESPONSIVE DESIGN  */
+@media(max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .hunbegar {
+        display: block;
+        position: absolute;
+        top: 12%;
+        right: 10%;
+        z-index: 999;
+        color: black;
+        padding: 1rem;
+    }
+
+
+    .title {
+        display: block;
+        background-color: #fafafa;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 17px 2rem;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .title span {
+        color: #ed563b;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        background-color: #f7f7f7;
+        width: 90vw;
+        margin: 0 auto;
+        position: fixed;
+        inset: 0 0 0 0;
+        transition: all 365ms ease-in;
+        transform: translatex(0%);
+        margin-block: 2.5rem;
+        padding: 1rem;
+        z-index: 2;
+    }
+
+    .mobile-menu[data-visible="false"] {
+        transform: translatex(150%);
+    }
+
+    .hunbegar i[data-visible="true"] {
+        display: block;
+    }
+
+    .hunbegar i[data-visible="false"] {
+        display: none;
+    }
+
+    .hunbegar i {
+        z-index: 1111;
+    }
+
+    .mobile-menu .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-menu .navigation .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .mobile-menu .navigation .mobile-nav-links .btn {
+        width: 85%;
+        height: 50px;
+        margin-top: 1rem;
+    }
+
+    .mobile-menu .navigation .mobile-nav-links a {
+        text-decoration: none;
+        color: #454f5a;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu .navigation .mobile-nav-links .home {
+        color: #ed563b;
+    }
+
+    .mobile-menu .navigation .mobile-nav-links li {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e0e0e0;
+
+    }
+
+    .content {
+        margin-top: 2rem;
+    }
+
+    .content h6 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .content h2 {
+        font-size: 3.2rem;
+        margin: 1rem 2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .training-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+        gap: 1rem;
+    }
+
+    .training-card {
+        width: 100%;
+    }
+
+    .training-classes {
+        width: 100%;
+    }
+
+    .training-classes img {
+        width: 100%;
+    }
+
+    .training-classes {
+        padding: 0;
+    }
+
+    .expert-traing .gym-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .expert-traing .gym-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .expert-traing .gym-card img {
+        width: 100%;
+    }
+
+    .container- {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+        .container- .google-map {
+            max-width: 300px;
+            min-height: 310px;
+            padding: 1.5rem;
+        }
+
+}

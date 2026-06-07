@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="hunbegar">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+        </div>
+        <nav class="nav-container desktop-menu">
+            <div class="logo">
+                <h2>Training <span>Studio</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Contact</a></li>
+                <button class="btn">Sign Up</button>
+            </ul>
+        </nav>
+        <h2 class="title">Training <span>Studio</span></h2>
+        <div class="mobile-menu" data-visible="false">
+            <div class="navigation">
+                <ul class="mobile-nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="home">Classes</a></li>
+                    <li><a href="#" class="home">Schedules</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <button class="btn">Sign Up</button>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="vedio">
+                <video src="images-&-vedios/vedio-11.mp4" autoplay muted loop></video>
+            </div>
+            <div class="content">
+                <h6>work harder, get stronger </h6>
+                <h2>easy with our <span>gym</span></h2>
+                <div><button class="btn" id="btn">become amember</button></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-container">
+        <div class="choose-program">
+            <h2>Choose <span>Program</span></h2>
+            <img src="images-&-vedios/line-dec.png" alt="">
+            <p>Training Studio is free CSS template for gyms and fitness centers. You are <br> allowed to use this
+                layout for your business
+                website.</p>
+        </div>
+        <div class="container-rows">
+            <div class="cards">
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>basic fitness</h4>
+                        <p>Please do not re-distribute this template ZIP file on any template collection website. This
+                            is not allowed.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>Advanced Muscle Course</h4>
+                        <p>You may want to browse through Digital Marketing or Corporate HTML CSS templates on our
+                            website.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>New Gym Training</h4>
+                        <p>If you wish to support TemplateMo website via PayPal, please feel free to contact us. We
+                            appreciate it a lot.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>Yoga Training</h4>
+                        <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and
+                            sections.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>Basic Muscle Course</h4>
+                        <p>Credit goes to Pexels website for images and video background used in this HTML template.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="images-&-vedios/dumble.png" alt=""></div>
+                    <div class="text">
+                        <h4>Body Building Course</h4>
+                        <p>Suspendisse fringilla et nisi et mattis. Curabitur sed finibus nisi. Integer nibh sapien,
+                            vehicula et auctor.</p>
+                        <a href="#">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GYM SECTION -->
+    <section class="gym-sec">
+        <div class="containe-sec">
+            <h2>Don’t <span>think</span>, begin <span>today</span>!</h2>
+            <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio <br>
+                augue eget libero.
+                Morbi tempus mauris a nisi luctus imperdiet.</p>
+            <div><button class="btn" id="btn">become amember</button></div>
+        </div>
+    </section>
+
+    <!-- Our Classes -->
+    <section class="classes">
+        <div class="choose-program">
+            <h2>Our Classes</h2>
+            <img src="images-&-vedios/line-dec.png" alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa
+                consequat eu.</p>
+        </div>
+        <div class="training-row">
+            <div class="training-cards">
+                <div class="training-card">
+                    <div class="img"><img src="images-&-vedios/dumble-2.png" alt=""></div>
+                    <h4 class="first-class">first training classes</h4>
+                </div>
+                <div class="training-card">
+                    <div class="img"><img src="images-&-vedios/dumble-2.png" alt=""></div>
+                    <h4>second training classes</h4>
+                </div>
+                <div class="training-card">
+                    <div class="img"><img src="images-&-vedios/dumble-2.png" alt=""></div>
+                    <h4>third training classes</h4>
+                </div>
+                <div class="training-card">
+                    <div class="img"><img src="images-&-vedios/dumble-2.png" alt=""></div>
+                    <h4>fourth training classes</h4>
+                </div>
+                <div><button class="btn" id="class-btn">view all Schedules</button></div>
+            </div>
+            <div class="training-classes">
+                <img src="images-&-vedios/gym-2.jpg" alt="">
+                <h2>First Class First Training Class</h2>
+                <p>nteger dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit.
+                    Praesent ultrices erat
+                    ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed
+                    massa. Cras quis
+                    pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus.</p>
+                <div><button class="btn" id="view-btn">view Schedules</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIME TABLE Schedules -->
+    <section class="time-table">
+        <div class="choose-program">
+            <h2>Classes Schedule</h2>
+            <img src="images-&-vedios/line-dec.png" alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum dolor, ultricies
+                fermentum massa consequat eu.</p>
+        </div>
+        <ul class="unoder-list">
+            <li>monday /</li>
+            <li>tuesday /</li>
+            <li>wednesday /</li>
+            <li>thursday /</li>
+            <li>fryday /</li>
+        </ul>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>fitness classess</td>
+                    <td>10:00AM- 11:00AM</td>
+                    <td></td>
+                    <td>William G. Stewart</td>
+                </tr>
+                <tr>
+                    <td>Muscle training</td>
+                    <td>10:00AM- 11:00AM</td>
+                    <td></td>
+                    <td>Paul D. Newman</td>
+                </tr>
+                <tr>
+                    <td>Body Building</td>
+                    <td></td>
+                    <td>2:00PM - 3:30PM</td>
+                    <td>Boyd C. Harris</td>
+                </tr>
+                <tr>
+                    <td>Yoga Training Class</td>
+                    <td></td>
+                    <td></td>
+                    <td>Hector T. Daigle</td>
+                </tr>
+                <tr>
+                    <td>Advanced Training</td>
+                    <td></td>
+                    <td></td>
+                    <td>Bret D. Bowers</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- EXPER TRAINIG -->
+    <section class="expert-traing">
+        <div class="choose-program">
+            <h2>Expert <span>Trainers</span></h2>
+            <img src="images-&-vedios/line-dec.png" alt="">
+            <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra <br> ipsum ultriciesfermentum
+                massa consequat eu.</p>
+        </div>
+        <div class="gym-cards">
+            <div class="gym-card">
+                <img src="images-&-vedios/man-1.jpg" alt="">
+                <h5>Strength Trainer</h5>
+                <h4>Bret D. Bowers</h4>
+                <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                    pour-over seitan
+                    flannel.</p>
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+            </div>
+            <div class="gym-card">
+                <img src="images-&-vedios/man-2.jpg" alt="">
+                <h5>Muscle Trainerr</h5>
+                <h4>Hector T. Daigl</h4>
+                <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                    pour-over seitan
+                    flannel.</p>
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+            </div>
+            <div class="gym-card">
+                <img src="images-&-vedios/man-1.jpg" alt="">
+                <h5>Power Trainer</h5>
+                <h4>Paul D. Newman</h4>
+                <p>Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key
+                    pour-over seitan
+                    flannel.</p>
+                <div class="social-media-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOOGLE MAP AND FORM  -->
+    <section class="container-">
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.40802010066!2d36.80652102381557!3d-1.261041176960724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17199c297e71%3A0x7019c24cbb4896d4!2sParklands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1780823615523!5m2!1sen!2ske"
+                width="610" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form">
+            <div class="contact-form-container">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button class="btn-send">SEND MESSAGE</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <p>Copyright © 2026 Training Studio - Designed by TemplateMo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
