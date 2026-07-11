@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: capitalize;
+    font-family: serif;
+    margin: 10px;
+    padding: 5px;
+}
+
+label{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+div p{
+    background-color: red;
+    width: 500px;
+    height: 250px;
+    padding: 100px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.colorHistory{
+    font-size: 1.5rem;
+    padding: 6px;
+    list-style-type: none;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
