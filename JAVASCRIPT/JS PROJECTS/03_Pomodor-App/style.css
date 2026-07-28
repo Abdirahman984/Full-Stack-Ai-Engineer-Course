@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(135deg, #24eb38, #2431eb);
+    color: white;
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pomo {
+    background-color: white;
+    color: #2431eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 650px;
+    margin: 0 auto;
+    /* padding: 0 100px 100px 100px; */
+    padding: 10px 20px 50px;
+}
+
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.timer {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #24eb38;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.startButton{
+    background-color: hsl(120, 100%, 45%);
+}
+
+.stopButton{
+    background-color: hsl(0, 100%, 40%);
+}
+
+.resetButton{
+    background-color: hsl(240, 100%, 40%);
+}
