@@ -1,45 +1,19 @@
-// import DisplayBlog from "../Lessons/Lesson-1/Blog";
-// import LayoutAll from "../Lessons/Lesson-1/Layouts";
+import { Outlet } from "react-router";
+import Nav from "../Exercises/Exercise-25/Nav";
 
-// import Greeting from "../Lessons/Lesson-2/Props";
+const App = () => {
 
 
-import UserCard from "../Exercises/Exercise-3/PropsExercise";
 
-function DisplayMessage (){
-
-  const UserName = ""
-  const Email = ""
-  const Role = ""
-  
   return (
-    <>
-      <UserCard
-    UserName = {"Abdirahman"}
-    Email = {"abdirahmanali@gmail.com"}
-    Role = {"software engineer"}
-    />
-      <UserCard
-    UserName = {"Aish"}
-    Email = {"aishaabdi@gmail.com"}
-     Role = {"student"}
-    />
-      <UserCard
-    UserName = {"najma"}
-    Email = {"najmaqurux@gmail.com"}
-     Role = {"graphic designer"}
-    />
-      <UserCard
-    UserName = {"Abdiqudus"}
-    Email = {"abdiqudusabdi@gmail.com"}
-     Role = {"student"}
-    />
+    <div>
+      <Nav />
+      <Outlet />
 
-    </>
-  
+    </div>
+
   )
-
 }
 
-export default DisplayMessage;
+export default App;
 

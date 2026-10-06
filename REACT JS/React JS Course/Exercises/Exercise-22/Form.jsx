@@ -1,27 +1,70 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-const form = () => {
+const Form = () => {
 
     const [formData, setFormData] = useState({
         userName: '',
         email: '',
-        password: ''
+        password: '',
     })
 
-    const [isChacked, setIsChecked] = useState(false)
+    const [errors, setErrors] = useState({})
 
-    const [selectedOption, setSelectedOption] = useState('')
+    const validateForm = () => {
+        const newErrors = {}
+
+
+
+        if (!formData.userName.trim()) {
+            newErrors.userName = 'username is required'
+
+        }
+
+        if (!formData.email.trim()) {
+            newErrors.email = 'email is invalid'
+        }
+        if (!formData.password.trim()) {
+            newErrors.password = 'you must put password'
+        }
+
+        return newErrors
+
+
+
+    }
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('form data', formData, isChacked)
+
+        const validateErorrs = validateForm();
+        console.log(validateErorrs)
+
+        if (Object.keys(validateErorrs).length === 0) {
+            console.log('success', formData)
+
+        } else {
+            setErrors(validateErorrs)
+
+            console.log('form data', formData,)
+        }
+
     }
 
     const handleChange = (e) => {
         const { name, value } = e.target
         setFormData((prevData) => ({ ...prevData, [name]: value }))
 
+        // if (name === 'password' && !value === '0') {
+        //     setErrors((prev) => ({...prev, password}))
+        // } else{
+        //     setErrors((prev) => ({...prev, [name] : value}))
+        // }
 
+        if (errors[name]) {
+            setErrors((prev) => ({ ...prev, [name]: '' }))
+        }
     }
 
     return (
@@ -30,25 +73,17 @@ const form = () => {
             <form onSubmit={handleSubmit} >
                 <label htmlFor="">user name :</label>
                 <input className='input' type="text" name='userName' onChange={handleChange} value={formData.userName} /> <br />
+                {errors.userName && <p>{errors.userName}</p>}
                 <label htmlFor="">email :</label>
                 <input className='input' type="email" name='email' onChange={handleChange} value={formData.email} /> <br />
+                {errors.email && <p>{errors.email}</p>}
                 <label htmlFor="">password :</label>
                 <input className='input' type="password" name='password' onChange={handleChange} value={formData.password} /> <br />
-                <label htmlFor="">are you allwo the privacy </label>
-                <input type="checkbox" name='checked' onChange={(e) => setIsChecked(e.target.checked)} value={isChacked.checked} /> <br />
-
-                <select onChange={(e) => setSelectedOption(e.target.value)} value={selectedOption}>
-                    <option value="">select an option</option>
-                    <option value="option-1">option 1</option>
-                    <option value="option-2">option 2</option>
-                    <option value="option-3">option 3</option>
-                    <option value="option-4">option 4</option>
-                </select>
-
+                {errors.password && <p>{errors.password}</p>}
                 <button type='submit'>submit</button>
             </form>
         </div>
     )
 }
 
-export default form;
+export default Form;
