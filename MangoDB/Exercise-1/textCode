@@ -1,0 +1,49 @@
+/*
+{
+    _id: ObjectId('6ad335f6090248e2b438e710'),
+        name: 'abdiqudus',
+            email: 'abdiqudus@gmail.com',
+                age: 19,
+                    course: [
+                        'reacts js',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'NAIROBI',
+                                street: 'parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e711'),
+        name: 'najma',
+            email: 'najma@gmail.com',
+                age: 20,
+                    course: [
+                        'mangoDB',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'nairobi',
+                                state: 'Parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e712'),
+        name: 'aisha',
+            email: 'aisha@gmail.com',
+                age: 20,
+                    course: [
+                        'app develpment',
+                        'react netive'
+                    ]
+}
+
+*/
