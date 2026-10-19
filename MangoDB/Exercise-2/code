@@ -1,0 +1,176 @@
+/*
+
+db.students.find({age : {$gt : 22}})
+{
+  _id: ObjectId('6ad5b7002c5db59ccb6852aa'),
+  name: 'farah',
+  age: 30,
+  email: 'farah@gmail9.com',
+  'courses ': [
+    'node.js'
+  ]
+}
+
+{
+    _id: ObjectId('6ad5b7002c5db59ccb6852aa'),
+        name: 'farah',
+            age: 30,
+                email: 'farah@gmail9.com',
+                    'courses ': [
+                        'node.js'
+                    ]
+}
+
+db.students.find({ course: "react js" })
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e710'),
+        name: 'abdiqudus',
+            email: 'abdiqudus@gmail.com',
+                age: 19,
+                    course: [
+                        'react js',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'NAIROBI',
+                                street: 'parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+db.students.find({ name: { $regex: /^a/ } })
+{
+    _id: ObjectId('6ad335f6090248e2b438e710'),
+        name: 'abdiqudus',
+            email: 'abdiqudus@gmail.com',
+                age: 19,
+                    course: [
+                        'react js',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'NAIROBI',
+                                street: 'parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e712'),
+        name: 'aisha',
+            email: 'aisha@gmail.com',
+                age: 20,
+                    course: [
+                        'app develpment',
+                        'react netive'
+                    ]
+}
+
+db.students.find({ age: { $in: [20, 31] } })
+{
+    _id: ObjectId('6ad335f6090248e2b438e711'),
+        name: 'najma',
+            email: 'najma@gmail.com',
+                age: 20,
+                    course: [
+                        'mangoDB',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'nairobi',
+                                state: 'Parkland',
+                                building: 73
+                            }
+                        ]
+}
+{
+    _id: ObjectId('6ad335f6090248e2b438e712'),
+        name: 'aisha',
+            email: 'aisha@gmail.com',
+                age: 20,
+                    course: [
+                        'app develpment',
+                        'react netive'
+                    ]
+}
+
+db.students.find({ email: { $not: /@gmail.com$/ } })
+{
+    _id: ObjectId('6ad5b7002c5db59ccb6852aa'),
+        name: 'farah',
+            age: 30,
+                email: 'farah@gmail9.com',
+                    'courses ': [
+                        'node.js'
+                    ]
+}
+
+db.students.find({
+    age: { $gt: 20 },
+    course: 'react js'
+})
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e710'),
+        name: 'abdiqudus',
+            email: 'abdiqudus@gmail.com',
+                age: 29,
+                    course: [
+                        'react js',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'NAIROBI',
+                                street: 'parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+db.students.find({
+    $or: [
+        { course: "react js" },
+        { course: "node.js" }
+    ]
+})
+
+{
+    _id: ObjectId('6ad335f6090248e2b438e710'),
+        name: 'abdiqudus',
+            email: 'abdiqudus@gmail.com',
+                age: 29,
+                    course: [
+                        'react js',
+                        'node js'
+                    ],
+                        address: [
+                            {
+                                city: 'NAIROBI',
+                                street: 'parkland',
+                                building: 73
+                            }
+                        ]
+}
+
+db.students.find({
+    name: { $regex: /^f/ },
+    email: { $regex: /\.edu$/ }
+})
+
+{
+    _id: ObjectId('6ad5b7002c5db59ccb6852aa'),
+        name: 'farah',
+            age: 30,
+                email: 'farah@gmail9.edu',
+                    'courses ': [
+                        'node.js'
+                    ]
+}
+                    */
