@@ -1,0 +1,57 @@
+/*
+
+db.students.insertOne(
+  {name: "abdirahman", email : "abdirahmanali@gmail.com", courses: ["react js", "node js"], points :10}
+)
+
+{
+  _id: ObjectId('6ad5f9eae839e48afee329db'),
+  name: 'abdirahman',
+  email: 'abdirahmanali@gmail.com',
+  courses: [
+    'react js',
+    'node js'
+  ],
+  points: 10
+}
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    { $set: { email: "abdirahmanalibakal@gmail.com" } }
+)
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    { $inc: { points: 20 } }
+)
+
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    { $push: { courses: "NOSQL" } }
+)
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    { $pull: { courses: "NOSQL" } }
+)
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    {
+        $set: { email: "abdirahman@gmail.com" },
+        $inc: { points: 25 },
+        $pull: { courses: "mangoDB" }
+    }
+)
+
+db.students.updateOne(
+    { name: "abdirahman" },
+    {
+        $set: { email: "abdirahman@gmail.com" },
+        $inc: { points: 25 },
+        $push: { courses: "mangoDB" }
+    }
+)
+
+*/
